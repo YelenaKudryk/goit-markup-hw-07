@@ -1,0 +1,76 @@
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-color-background);
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.team-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.employee-card {
+  background-color: var(--backgroud-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.heading-team {
+  margin-bottom: 50px;
+}
+
+.team-member {
+  margin-bottom: 10px;
+
+  @include font(16px, 500, 1.19);
+
+  text-align: center;
+  color: var(--color-title);
+}
+
+.team-job {
+  @include font(16px, 400, 1.19);
+
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--transition-dur-funk), color var(--transition-dur-funk);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-color-font);
+  }
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
